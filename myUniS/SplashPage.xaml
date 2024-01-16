@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="myUniS.SplashPage"
+             BackgroundColor="Lavender">
+
+    <Grid>
+        <!-- Splash screen image or content -->
+        <Image Source="bdo1.png" Aspect="AspectFill"
+               WidthRequest="500" HeightRequest="500"
+               HorizontalOptions="Center" VerticalOptions="Start" 
+               Margin="0,-110,250,00"  />
+
+        <!-- Optional: Add a loading indicator or other elements -->
+        <ActivityIndicator IsRunning="True" Color="Purple" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+    </Grid>
+
+</ContentPage>

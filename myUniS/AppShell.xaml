@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="myUniS.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:myUniS"
+    Shell.FlyoutBehavior="Disabled">
+
+
+    <TabBar>
+            
+        <Tab Title="CampusFeed" Icon="feed.png" >
+            <ShellContent Title="CampusFeed"
+              ContentTemplate="{DataTemplate local:CampusFeed}" Route="CampusFeed" />
+        </Tab>
+        <Tab Title="Organizations" Icon="People.png" >
+            <ShellContent Title="Organizations"
+         ContentTemplate="{DataTemplate local:Organizations}" Route="Organizations" />
+        </Tab>
+        <Tab Title="Messages" Icon="email.png" >
+            <ShellContent Title="Messages"
+              ContentTemplate="{DataTemplate local:Messaging}" Route="Messaging" />
+        </Tab>
+        <Tab Title="MarketPlace" Icon="marketplace.png" >
+            <ShellContent Title="MarketPlace"
+              ContentTemplate="{DataTemplate local:MarketPlace}" Route="MarketPlace" />
+        </Tab>
+        <Tab Title="Notifications" Icon="notification.png" >
+            <ShellContent Title="Notification"
+       ContentTemplate="{DataTemplate local:Noitfication}" Route="Notification" />
+        </Tab>
+        <Tab Title="Others" Icon="categories.png">
+            <ShellContent Title="Others" Route="Others">
+                <ContentPage Background="DarkGreen">
+                    <VerticalStackLayout Spacing="15" Padding="0,20" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="Others" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"
+                       FontFamily="OpenSans_Semibold" FontSize="40" FontAttributes="Bold" />
+                        <Button Text="Settings" Clicked="GoSettings"
+                        VerticalOptions="Start" HorizontalOptions="CenterAndExpand"
+                        WidthRequest="150" HeightRequest="150"
+                        Margin="0,0,200,0"  /> 
+                        <Button Text="Organizations" Clicked="GoOrganizations"
+                        VerticalOptions="Start" HorizontalOptions="CenterAndExpand"
+                        WidthRequest="150" HeightRequest="150"
+                        Margin="150,-164,0,0" />    
+                        <Button Text="Event Calendar" Clicked="GoEventCalendar"
+                        VerticalOptions="Start" HorizontalOptions="CenterAndExpand"
+                        WidthRequest="330" HeightRequest="50"
+                        Margin="-20,0,0,0" />
+                        <Button Text="Profile" Clicked="GoProfile"
+                        VerticalOptions="Start" HorizontalOptions="CenterAndExpand"
+                        WidthRequest="330" HeightRequest="50"
+                        Margin="-20,-2,0,0" />
+
+                    </VerticalStackLayout>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+
+
+
+
+    </TabBar>
+    
+
+
+</Shell>

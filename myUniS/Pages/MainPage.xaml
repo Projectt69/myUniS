@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="myUniS.MainPage"
+             BackgroundColor="Lavender" >
+             
+    
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="25"
+            VerticalOptions="Center"
+            Spacing="25">
+            
+             
+           
+            <Label
+                Text="Campus Feed!" TextColor="Purple"
+                VerticalOptions="Center" HorizontalOptions="Center"
+                FontFamily="OpenSans_Semibold" FontSize="40" FontAttributes="Bold" />
+
+            <Label
+                Text="Welcome to, myUniS" TextColor="MediumPurple"
+                VerticalOptions="Center" HorizontalOptions="Center"
+                FontFamily="OpenSans_Semibold" FontSize="24" FontAttributes="Bold" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
