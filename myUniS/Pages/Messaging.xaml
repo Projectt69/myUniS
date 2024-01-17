@@ -5,11 +5,27 @@
              Title="Messaging"
              BackgroundColor="LightGray">
 
-    <VerticalStackLayout Spacing="15" Padding="0,20"
-                 HorizontalOptions="Center" VerticalOptions="Start">
-        <Label
-  Text="Messages" TextColor="#008170"
-  VerticalOptions="Center" HorizontalOptions="Center"
-  FontFamily="Poppins" FontSize="30" FontAttributes="Bold"/>
-    </VerticalStackLayout>
+    <StackLayout>
+        
+        <ListView x:Name="chatListView"
+                  VerticalOptions="FillAndExpand"
+                  SeparatorVisibility="None"
+                  Margin="400,20,0,0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout  Padding="10" HorizontalOptions="{Binding MessageAlignment}">
+                            <Label Text="{Binding Text}"  BackgroundColor="{Binding BackgroundColor}" TextColor="Black" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        
+        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+            <Entry x:Name="messageEntry" Background="white" TextColor="Black" WidthRequest="250" Margin="400,0,0,0" Placeholder="Type a message..." VerticalOptions="CenterAndExpand" />
+            <Button Text="Send" Clicked="OnSendMessageClicked" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

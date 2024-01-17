@@ -11,12 +11,11 @@ namespace myUniS
 
         private void OnSearchButtonPressed(object sender, EventArgs e)
         {
-            // Handle search button pressed event
+            DisplayAlert("ERROR", "Wala pang Backend", "OK");
         }
 
         private void OnSearchTextChanged(object sender, TextChangedEventArgs e)
         {
-            // Handle text changed event (search text)
         }
     }
 }

@@ -10,10 +10,10 @@
             <Style x:Key="SearchBarStyle" TargetType="SearchBar">
                 <Setter Property="Placeholder" Value="Search..." />
                 <Setter Property="FontSize" Value="15"  />
-                <Setter Property="Background" Value="Grey" />
-                <Setter Property="WidthRequest" Value="200" />
-
-
+                <Setter Property="Background" Value="Aquamarine" />
+                <Setter Property="WidthRequest" Value="250" />
+                <Setter Property="Margin" Value="0,-15,0,0" />
+ 
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -33,7 +33,7 @@
                FontAttributes="Bold"/>
 
         <SearchBar Style="{StaticResource SearchBarStyle}"
-           HorizontalOptions="FillAndExpand"
+           HorizontalOptions="FillAndExpand" 
            
            CancelButtonColor="Black"
            SearchButtonPressed="OnSearchButtonPressed"
