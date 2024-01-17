@@ -9,7 +9,7 @@
             Routing.RegisterRoute("Organizations", typeof(Organizations));
             Routing.RegisterRoute("EventCalendar", typeof(EventCalendar));
             Routing.RegisterRoute("Profile", typeof(Profile));
-
+            Routing.RegisterRoute("MarketPlace", typeof(MarketPlace));
         }
         private async void GoSettings(object sender, EventArgs e)
         {
@@ -27,7 +27,9 @@
         {
             await Shell.Current.GoToAsync("Profile");
         }
-
-
+        private async void GoMarketPlace(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("MarketPlace");
+        }
     }
 }

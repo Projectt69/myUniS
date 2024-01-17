@@ -3,20 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="myUniS.CampusFeed"
              Title="CampusFeed"
-             BackgroundColor="Lavender" >
+             BackgroundColor="LightGray">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SearchBarStyle" TargetType="SearchBar">
+                <Setter Property="Placeholder" Value="Search..." />
+                <Setter Property="FontSize" Value="15"  />
+                <Setter Property="Background" Value="Grey" />
+                <Setter Property="WidthRequest" Value="200" />
 
 
-    <VerticalStackLayout Spacing="15" Padding="0,20"
-                    HorizontalOptions="Center" VerticalOptions="Center">
-        <Label
-     Text="Campus Feed!" TextColor="Purple"
-     VerticalOptions="Center" HorizontalOptions="Center"
-     FontFamily="OpenSans_Semibold" FontSize="40" FontAttributes="Bold" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <VerticalStackLayout Spacing="15" Padding="0,10"
+                         HorizontalOptions="Center" VerticalOptions="Start">
 
-        <Label
-     Text="Welcome to, myUniS" TextColor="MediumPurple"
-     VerticalOptions="Center" HorizontalOptions="Center"
-     FontFamily="OpenSans_Semibold" FontSize="24" FontAttributes="Bold" />
+       
+        
+
+        <Label Text="Home"
+               TextColor="#008170"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontFamily="Poppins"
+               FontSize="30"
+               FontAttributes="Bold"/>
+
+        <SearchBar Style="{StaticResource SearchBarStyle}"
+           HorizontalOptions="FillAndExpand"
+           
+           CancelButtonColor="Black"
+           SearchButtonPressed="OnSearchButtonPressed"
+           TextChanged="OnSearchTextChanged"/>
 
     </VerticalStackLayout>
 </ContentPage>

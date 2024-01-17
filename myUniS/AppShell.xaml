@@ -6,30 +6,27 @@
     xmlns:local="clr-namespace:myUniS"
     Shell.FlyoutBehavior="Disabled">
 
+    
 
     <TabBar>
             
-        <Tab Title="CampusFeed" Icon="feed.png" >
+        <Tab  Icon="home.png" >
             <ShellContent Title="CampusFeed"
               ContentTemplate="{DataTemplate local:CampusFeed}" Route="CampusFeed" />
         </Tab>
-        <Tab Title="Organizations" Icon="People.png" >
+        <Tab Icon="People.png" >
             <ShellContent Title="Organizations"
          ContentTemplate="{DataTemplate local:Organizations}" Route="Organizations" />
         </Tab>
-        <Tab Title="Messages" Icon="email.png" >
+        <Tab  Icon="email.png" >
             <ShellContent Title="Messages"
               ContentTemplate="{DataTemplate local:Messaging}" Route="Messaging" />
         </Tab>
-        <Tab Title="MarketPlace" Icon="marketplace.png" >
-            <ShellContent Title="MarketPlace"
-              ContentTemplate="{DataTemplate local:MarketPlace}" Route="MarketPlace" />
-        </Tab>
-        <Tab Title="Notifications" Icon="notification.png" >
+        <Tab  Icon="notification.png" >
             <ShellContent Title="Notification"
        ContentTemplate="{DataTemplate local:Noitfication}" Route="Notification" />
         </Tab>
-        <Tab Title="Others" Icon="categories.png">
+        <Tab  Icon="categories.png">
             <ShellContent Title="Others" Route="Others">
                 <ContentPage Background="DarkGreen">
                     <VerticalStackLayout Spacing="15" Padding="0,20" HorizontalOptions="Center" VerticalOptions="Center">
@@ -51,15 +48,15 @@
                         VerticalOptions="Start" HorizontalOptions="CenterAndExpand"
                         WidthRequest="330" HeightRequest="50"
                         Margin="-20,-2,0,0" />
+                        <Button Text="Marketplace" Clicked="GoMarketPlace"
+                        VerticalOptions="Start" HorizontalOptions="CenterAndExpand"
+                        WidthRequest="330" HeightRequest="50"
+                        Margin="-20,-2,0,0" />
 
                     </VerticalStackLayout>
                 </ContentPage>
             </ShellContent>
         </Tab>
-
-
-
-
 
     </TabBar>
     

@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="myUniS.Noitfication"
              Title="Noitfication"
-             Background="MintCream">
+             Background="LightGray">
 
     <VerticalStackLayout Spacing="15" Padding="0,20"
-                HorizontalOptions="Center" VerticalOptions="Center">
-        <Label 
-        Text="Notification" TextColor="Black"
-        VerticalOptions="Center" HorizontalOptions="Center"
-        FontFamily="OpenSans_Semibold" FontSize="40" FontAttributes="Bold"/>
+                 HorizontalOptions="Center" VerticalOptions="Start">
+        <Label
+  Text="Notifications" TextColor="#008170"
+  VerticalOptions="Center" HorizontalOptions="Center"
+  FontFamily="Poppins" FontSize="30" FontAttributes="Bold"/>
     </VerticalStackLayout>
 </ContentPage>

@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="myUniS.Settings"
              Title="Settings"
-             Background="Silver">
-    
-    
+             Background="LightGray">
+
+
     <VerticalStackLayout Spacing="15" Padding="0,20"
-        HorizontalOptions="Center" VerticalOptions="Center">
-        <Label 
-            Text="Settings"
-            VerticalOptions="Center" HorizontalOptions="Center"
-            FontFamily="OpenSans_Semibold" FontSize="40" FontAttributes="Bold"/>
+                 HorizontalOptions="Center" VerticalOptions="Start">
+        <Label
+  Text="Settings" TextColor="#008170"
+  VerticalOptions="Center" HorizontalOptions="Center"
+  FontFamily="Poppins" FontSize="30" FontAttributes="Bold"/>
     </VerticalStackLayout>
 </ContentPage>
